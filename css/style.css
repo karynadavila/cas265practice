@@ -1,0 +1,658 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+
+/*** HTML tags ***/
+body{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 2em;
+	background: #d78d30; /* Old browsers */
+	background: -moz-linear-gradient(left, #d78d30 0%, #efc744 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d78d30), color-stop(100%,#efc744)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #d78d30 0%,#efc744 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #d78d30 0%,#efc744 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #d78d30 0%,#efc744 100%); /* IE10+ */
+	background: linear-gradient(to right, #d78d30 0%,#efc744 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d78d30', endColorstr='#efc744',GradientType=1 ); /* IE6-9 */	
+}
+h1{
+	text-align: center;
+}
+h2{
+	background-image: url("../images/bullet.png");
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-left: 40px;	
+}
+img{
+	max-width: 100%;
+}
+nav{
+	display: none;
+}
+
+iframe {
+    border: medium none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border: 10px solid #FFFFFF;
+}
+table{
+	width: 100%;
+}
+table th{
+	padding-bottom: 5px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+table tr td:nth-child(1) {
+    width: 85%;
+}
+p.top a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+p.top a:link, p.top a:visited {
+    color: #DE4F01;
+}
+p.top a:hover, p.top a:active {
+    color: #FFFFFF;
+}
+
+/*** Classes ***/
+.clear{
+	clear: both;
+}
+.wrapper{
+	max-width: 1920px; /*960px;*/  /*55em;*/ 
+	margin: 0 auto;
+	width: 100%;
+}
+.leftcol{
+	float: left;
+	width: 45%;
+}
+.leftcol p{
+	text-align: justify;
+}
+.rightcol{
+	float: right;
+	width: 45%;
+}
+.rightcol img{
+	border: 10px solid #FFFFFF;
+}
+.toppings{
+	list-style: none;
+	/*-moz-column-count: 2;*/
+}
+.socials img{
+	width: 10%;
+}
+.contact{
+	display: none;
+}
+
+/*** IDs ***/
+#about, #menu, #gallery, #location, #contact{
+	padding: 10px;
+}
+#menu{
+	margin-top: -10px;
+}
+#gallery{
+	width: 100%;
+}
+#slidy-container{
+	width: 100%;
+	overflow: hidden;
+}
+#slidy {
+	margin: 0;
+	font-size: 0;
+	position: relative;
+	width: 433.5% !important;
+}
+#slidy img {
+	width: 25%;
+}
+
+/****************************************** MEDIA QUERIES ******************************************/
+
+/************* (min-device-width: 1px) and (max-device-width: 480px) -- mobile devices *************/
+@media screen and (min-device-width: 1px) and (max-device-width: 480px){
+	body{
+		font-size: .85em;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1.5em;
+		margin: 8px 0;
+		border-bottom: 2px dotted #db0000;	
+		width: 86.5%;
+	}
+	h3{
+		font-size: 1.25em;
+		text-align: center;
+		padding: 20px;
+		margin-left: -25px;
+		margin-bottom: 20px;
+	}
+	header .logo{
+		width: 219px;
+		margin: 0 auto;		
+	}
+	header .callus{
+		width: 100%;
+	}
+    header .callus img {
+        float: left;
+        width: 10%;
+    }
+    header .callus a:link, header .callus a:visited{
+        color: #DE4F01;
+    }
+    header .callus a:hover, header .callus a:active {
+        color: #FFFFFF;
+    }
+    header .callus span {
+        float: right;
+        width: 90%;
+        text-decoration: none;
+        margin-top: 3%; /*10px;*/
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+	iframe {
+	    width: 94%;
+	    border: 5px solid #FFFFFF;
+        margin-bottom: 15px;	
+	}	
+	.leftcol{
+		float: none;
+		width: 100%;
+	}
+	.rightcol{
+		float: none;
+		width: 100%;
+	}
+	.rightcol p{
+		text-align: center;
+	}
+	.rightcol img{
+		width: 94% !important;
+		border: 5px solid #FFFFFF;
+	}	
+	.hamburger {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  float: right;
+	  margin: 10px;
+	  padding: 10px 10px 9px;
+	  cursor: pointer;
+	  z-index: 99999;
+	  display: block;
+	}
+	.hamburger .hamburger-inner {
+	  position: relative;
+	  height: 21px;
+	  width: 25px;
+	  display: block;
+	  overflow: hidden;
+	  margin: 0;
+	  padding: 0;
+	}
+	.hamburger .bar {
+	  width: 25px;
+	  height: 3px;
+	  background: #DE4F01;
+	  position: absolute;
+	  top: 0;
+	}
+	.hamburger .bar.bar2,
+	.hamburger .bar.bar3 { top: 9px;; }
+	 
+	.hamburger .bar.bar4 { top: 18px }
+	 
+	.hamburger.open .bar1,
+	.hamburger.open .bar4 { display: none; }
+	 
+	.hamburger.open .bar2,
+	.hamburger.open .bar3 { height: 4px; }
+	
+	.mobile-menu {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  opacity: 0;
+	  display: block;
+	  width: 240px;
+	  height: 100%;
+	  color: #fff;
+	  background-color: rgba(222,79,1,.7);
+	  z-index: 100;
+	  overflow-y: scroll;
+	  -webkit-overflow-scrolling: touch;
+	}
+	.mobile-menu .mobile-menu-inner {
+	  width: 200px;
+	  padding: 20px 20px 60px;
+	}
+	 
+	.mobile-menu ul {
+	  margin: 0 0 25px;
+	  padding: 0;
+	}
+	 
+	.mobile-menu ul li {
+	  list-style: none;
+	  padding: 10px 0;
+	}
+	.mobile-menu ul li a{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.mobile-menu ul li a:link,.mobile-menu ul li a:visited{
+		color: #fff;
+	}	
+	.mobile-menu ul li a:hover,.mobile-menu ul li a:active{
+		color: #ff9e00;
+	}
+	.span_1_of_3{
+		width: 100%;
+	}	
+	.span_2_of_3{
+		width: 100%;
+	}
+	.span_3_of_3{
+		width: 100%;
+	}	
+	.offerings p{
+		margin-bottom: 8px;
+	}
+	.offerings table{
+		margin: 15px 0;
+	}
+	.toppings{
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		-o-column-count: 2;
+		column-count: 2;
+		padding: 0;
+	}
+    .socials {
+        margin-bottom: 15px;
+    }
+    #about .leftcol p{
+	    margin: 5% 0;
+    }    	
+	#slidy-container {
+		width: 92.5%;
+		border: 5px solid #FFF;	
+        margin-bottom: 15px;	
+	}
+	#location{
+		height: 360px;
+		margin-bottom: 150px;
+	}
+    #location p {
+        margin-bottom: 5px;
+    }
+	#contact{
+		height: 450px;
+	}
+	#contact p{
+		line-height: 2;
+	}
+	#contact .phone{
+		font-size: 1.5em;
+	}
+
+}
+
+/****************************** min-device-width: 481px -- tablets ********************************/
+@media screen and (min-device-width: 481px){
+	body{
+		font-size: 1.5em;
+	}
+	h1{
+		font-size: .95em;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000;
+	}
+	h2{
+		font-size: 1.5em;
+		margin: 8px 0;
+		border-bottom: 2px dotted #db0000;	
+		width: 95.5%;
+	}
+	h3{
+		font-size: 1.25em;
+		text-align: center;
+		padding: 20px;
+		margin-left: -25px;
+		margin-bottom: 20px;
+	}
+    table{
+	    width: 90%;
+    }
+    header p {
+        display: none;
+    }
+	header .logo{
+		width: 219px;	
+	}
+	header .callus{
+		width: 100%;
+	}
+    header .callus img {
+        float: right;
+        width: 5%;
+        margin-right: 27%;
+    }
+	header .callus a{
+		cursor: default;
+		pointer-events: none;
+	}	
+    header .callus span {
+        float: right;
+		color: #DE4F01;
+        text-decoration: none;
+        margin-top: 1%;
+        font-size: 1em;
+        font-weight: bold;
+        margin-right: -200px;
+    }
+    #about {
+        display: table;
+        margin: 5% 0;
+    }
+    #about .leftcol p{
+        line-height: 40px;
+        padding-right: 10px;
+    }
+    #about p.top{
+	    margin: 5% 0;
+    }
+	#slidy-container {
+		width: 98.5%;
+		border: 10px solid #FFF;	
+        margin-bottom: 15px;	
+	}	
+	#location{
+		height: 360px;
+		margin-bottom: 150px;
+	}
+    #location p {
+        font-size: .85em;
+        margin-bottom: 5px;
+        float: right;
+        width: 35%;
+    }
+    #location iframe {
+        float: left;
+        width: 60%;
+    }
+    #location p.top {
+        margin: 5% 0;
+        float: left;
+    }
+	#contact{
+		height: 450px;
+	}
+	#contact p{
+		line-height: 2;
+	}
+	#contact .phone{
+		font-size: 1em;
+	}
+    .wrapper {
+        width: 90%;
+    }
+	.leftcol{
+		float: left;
+		width: 60%;
+	}
+	.rightcol{
+		float: right;
+		width: 40%;
+        margin-top: 1.5%;
+	}
+    .rightcol h1 {
+        display: table-footer-group;
+    }
+	.rightcol p{
+		text-align: center;
+        display: table-header-group;
+	}
+	.rightcol img{
+		width: 94% !important;
+		border: 10px solid #FFFFFF;
+	}
+	.hamburger {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  float: right;
+	  margin: 10px;
+	  padding: 10px 10px 9px;
+	  cursor: pointer;
+	  z-index: 99999;
+	  display: block;
+	}
+	.hamburger .hamburger-inner {
+	  position: relative;
+	  height: 30px;
+	  width: 30px;
+	  display: block;
+	  overflow: hidden;
+	  margin: 0;
+	  padding: 0;
+	}
+	.hamburger .bar {
+	  width: 30px;
+	  height: 5px;
+	  background: #DE4F01;
+	  position: absolute;
+	  top: 0;
+	}
+	.hamburger .bar.bar2,
+	.hamburger .bar.bar3 { top: 9px;; }
+	 
+	.hamburger .bar.bar4 { top: 18px }
+	 
+	.hamburger.open .bar1,
+	.hamburger.open .bar4 { display: none; }
+	 
+	.hamburger.open .bar2,
+	.hamburger.open .bar3 { height: 4px; }
+	
+	.mobile-menu {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  opacity: 0;
+	  display: block;
+	  width: 240px;
+	  height: 100%;
+	  color: #fff;
+	  background-color: rgba(222,79,1,.7);
+	  z-index: 100;
+	  overflow-y: scroll;
+	  -webkit-overflow-scrolling: touch;
+	}
+	.mobile-menu .mobile-menu-inner {
+	  width: 200px;
+	  padding: 20px 20px 60px;
+	}
+	 
+	.mobile-menu ul {
+	  margin: 0 0 25px;
+	  padding: 0;
+	}
+	 
+	.mobile-menu ul li {
+	  list-style: none;
+	  padding: 10px 0;
+	}
+	.mobile-menu ul li a{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.mobile-menu ul li a:link,.mobile-menu ul li a:visited{
+		color: #fff;
+	}	
+	.mobile-menu ul li a:hover,.mobile-menu ul li a:active{
+		color: #ff9e00;
+	}
+	.span_1_of_3{
+        float: left;
+		width: 33.33%;
+	}	
+	.span_2_of_3{
+        float: left;
+		width: 33.33%;
+	}
+	.span_3_of_3{
+        float: right;
+		width: 33.33%;
+	}
+    .offerings {
+        font-size: .75em;
+    }
+	.offerings p{
+		margin-bottom: 8px;
+	}
+	.offerings table{
+		margin: 15px 0;
+	}
+	.toppings{
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+        -o-column-count: 1;
+        column-count: 1;
+        padding: 0;
+	}
+    .socials {
+        margin-bottom: 15px;
+    }
+    .socials img{
+	    width: 5%;
+    }    	
+}
+
+
+/***************************** min-device-width: 1025px -- desktops *******************************/
+@media only screen and (min-device-width: 1025px) {
+	header{
+		margin-top: 8%;
+	}
+	header .callus {
+		width: 100%;
+		margin-left: 14%;
+	}
+	header .callus a{
+		cursor: default;
+		pointer-events: none;
+	}
+	header .logo{
+		width: 100%;		
+	}	
+	nav{
+		display: block;
+		background-color: rgba(241,38,0,.5);
+		position: fixed;
+		/*width: 70%;*/
+		width: 100%;
+		top: 0;
+		font-size: .8em;
+		z-index: 20000;
+	}
+	nav ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	nav ul li{
+		display: inline-block;
+		width: 24.5%;
+	}
+	nav ul li:hover{
+		background-color: #f12600;
+	}
+	nav ul li a,visited{
+		color: #fff;
+		font-weight: bold;
+		display: block;
+		padding: 15px;
+		text-decoration: none;
+		text-align: center;
+	}
+	#about .leftcol p {
+		padding-right: 30px;
+	}
+	#about p.top {
+		margin: 0; 
+	}	
+	#location .phone{
+		font-size: 1.3em;
+		font-weight: bold;
+	}	
+	#contact{
+		display: none;
+	}
+	.wrapper{
+		width: 75%;	
+	}
+	.hamburger{
+		display: none;
+	}
+	.rightcol {
+		margin-top: 1%;
+	}	
+	.rightcol img {
+		width: 80% !important;
+		border: 10px solid #FFFFFF;
+	}
+	.contact{
+		display: block;
+	}
+	.contact a img{
+		width: 10%;
+	}		
+}

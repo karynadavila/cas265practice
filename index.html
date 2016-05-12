@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Burrito Masala</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Open+Sans' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- NAVIGATION MENU. IT'S SHOWN ONLY ON A DESKTOP SIZE. (SEE MEDIA QUERIES). -->
+    <nav>
+        <ul>
+		    <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav>    
+    <!-- ALL THE CONTENT IS INSIDE THIS WRAPPER. IT'LL CHANGE DEPENDING ON THE SCREEN SIZE. (SEE MEDIA QUERIES). -->
+	<div class="wrapper">
+        <!-- BURRITO MASALA LOGO (FLOAT: LEFT). BURRITO MASALA TELEPHONE (FLOAT: RIGHT).  -->
+        <header>			
+			<div class="callus"><a href="tel:503-555-5555"><img src="images/call-to-order.png" alt="Call to order: 503-555-5555"/><span>(503)555-5555</span></a></div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+			<div class="logo"><img src="images/burritomasala.png" alt="Burrito Masala Logo"></div>
+		</header>
+        <!-- THIS DIV CLEANS THE ABOVE FLOAT PROPERTY. ALL THE CONTENT FROM THIS POINT IT'S NOT GOING TO OVERLAP.  -->
+        <div class="clear"></div>
+        
+        <!-- NAVIGATION MENU. IT'S SHOWN ON SMARTPHONES AND IPADS, AND IT APPEARS FROM RIGHT TO LEFT WHEN THE USER CLICK THE HAMBURGER MENU LOCATED -->
+        <!-- ON THE TOP-RIGHT OF THE SCREEN. (SEE MEDIA QUERIES). -->
+        <!-- THIS MENU WORKS WITH JQUERY. -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-inner">
+            <ul>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>	    
+        
+        <!-- ABOUT SECTION. IT HAS 2-COLUMNS, AND IT USES THE FLOAT PROPERTY. 1-COLUMN FOR SMALL SCREENS. (SEE MEDIA QUERIES). -->
+        <div id="about">
+            <div class="leftcol">
+		        <p>
+                    Burrito Masala will be a food cart located in downtown Portland, OR that specializes in delicious southern Indian (Kerala) and Mexican foods… 
+                    stuffed in a flour tortilla! Diners can also opt to go gluten free with our bowl options. We’re run by a husband and wife team (James Beard 
+                    award-winning chefs Prasad Varma and Ramona Varma-Hernandez).
+		        </p>		
+	        </div>
+	        <div class="rightcol">
+		    <h1>Come and try our HUUUUUUUGE! burrito.</h1>
+		    <p><img src="images/huge-burrito.jpg" alt="Huge Burrito at Burrito Masala"></p>
+	        </div> 
+            <!-- THIS DIV CLEANS THE ABOVE FLOAT PROPERTY. ALL THE CONTENT FROM THIS POINT IT'S NOT GOING TO OVERLAP.  -->
+            <div class="clear"></div>
+            <!--BACK TO THE TOP LINK. IT CAN BE USED INSTEAD OF SCROLLING TO THE TOP. -->
+            <p class="top"><a href="#top">Back  to Top</a></p>           
+        </div>
+
+        <!-- MENU SECTION. IT HAS 2-COLUMNS, AND IT USES THE FLOAT PROPERTY. -->
+        <div id="menu">
+            <h2>Our Menu</h2>
+            <!-- IT HAS 3-COLUMNS, AND IT USES THE FLOAT PROPERTY. ONLY 1-COLUMN FOR SMALL SCREENS. (SEE MEDIA QUERIES). -->
+            <div class="offerings">
+				<div class="span_1_of_3">
+					<p><em>First choose between meat or veggie:</em></p>
+					<table>
+						<tr>
+							<th>Meats</th>
+						</tr>
+						<tr>
+							<td>Chicken Tikka Masala</td>
+							<td>$&nbsp;&nbsp;&nbsp;9.00</td>
+						</tr>
+						<tr>
+							<td>Lamb Curry</td>
+							<td>$&nbsp;12.00</td>
+						</tr>
+						<tr>
+							<td>Pork in salsa verde</td>
+							<td>$&nbsp;&nbsp;&nbsp;8.00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>Veggies</th>
+						</tr>
+						<tr>
+							<td>Sambar (lentil curry)</td>
+							<td>$&nbsp;&nbsp;&nbsp;4.00</td>
+						</tr>
+						<tr>
+							<td>Aloo gobi masala</td>
+							<td>$&nbsp;&nbsp;&nbsp;6.00</td>
+						</tr>
+						<tr>
+							<td>Chile relleno</td>
+							<td>$&nbsp;&nbsp;&nbsp;8.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="span_2_of_3">
+					<p><em>Then choose one rice option:</em></p>
+					<table>
+						<tr>
+							<th>Rice (vegan)</th>
+						</tr>
+						<tr>
+							<td>Kerala biryani</td>
+							<td>$&nbsp;&nbsp;&nbsp;7.00</td>
+						</tr>
+						<tr>
+							<td>Spanish rice</td>
+							<td>$&nbsp;&nbsp;&nbsp;5.00</td>
+						</tr>
+						<tr>
+							<td>White or brown rice (khaima)</td>
+							<td>$&nbsp;&nbsp;&nbsp;7.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="span_3_of_3">
+					<p><em>And finally condiments of your choice:</em></p>
+					<table>
+						<tr>
+							<th>Toppings</th>
+						</tr>
+						<tr>
+							<td>
+								<ul class="toppings">
+									<li>Mango Chutney</li>
+									<li>Tomatillo Salsa</li>
+									<li>Raita</li>
+									<li>Grandma Elena’s Fiery Red Salsa </li>
+									<li>Cheese</li>
+									<li>Sour cream</li>
+									<li>Onions</li>
+									<li>Tomatoes</li>
+									<li>Cucumbers</li>
+									<li>Cilantro</li>
+									<li>Guacamole ($ .75 extra)</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+             <!-- THIS DIV CLEANS THE ABOVE FLOAT PROPERTY. ALL THE CONTENT FROM THIS POINT IT'S NOT GOING TO OVERLAP.  -->
+            <div class="clear"></div>
+            <!--BACK TO THE TOP LINK. IT CAN BE USED INSTEAD OF SCROLLING TO THE TOP. -->
+            <p class="top"><a href="#top">Back  to Top</a></p>  
+        </div>
+        <!-- GALLERY SECTION. IT SHOWS PICTURES OF EVERY DISH IN A SLIDESHOW. -->
+        <div id="gallery">
+            <h2>Gallery</h2>
+			<h3>Delicious southern Indian (Kerala) and Mexican foods… stuffed in a flour tortilla! Gluten free with our bowl options. </h3>
+            <!-- THIS SLIDESHOW UTILIZES JAVASCRIPT. (JS LOCATED AT THE BOTTOM OF INDEX.HTML) -->
+			<div id="slidy-container">
+			    <figure id="slidy">
+				    <img src="images/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala"/>
+				    <img src="images/lamb-curry.jpg" alt="Lamb Curry"/>
+				    <img src="images/pork-in-salsa-verde.jpg" alt="Pork in Salsa Verde"/>
+				    <img src="images/sambar.jpg" alt="Sambar"/>
+				    <img src="images/aloo-gobi-masala.jpg" alt="Aloo Gobi Masala"/>
+				    <img src="images/chile-relleno.jpg" alt="Chile Relleno"/>
+				    <img src="images/kerala-biryani.jpg" alt="Kerala Biryani"/>		    
+				    <img src="images/spanish-rice.jpg" alt="Spanish Rice"/>
+				    <img src="images/khaima.jpg" alt="Kehaima"/>
+				    <img src="images/raita.jpg" alt="Raita"/>
+				    <img src="images/toppings.jpg" alt="Variety of Toppings"/>
+				    <img src="images/toppings2.jpg" alt="Variety of Toppings"/>
+			    </figure>
+			</div>	
+            <!--BACK TO THE TOP LINK. IT CAN BE USED INSTEAD OF SCROLLING TO THE TOP. -->
+            <p class="top"><a href="#top">Back  to Top</a></p>  			
+        </div>
+         <!-- LOCATION SECTION. IT SHOWS A GOOGLE MAP AND HOURS OF OPERATION. -->
+        <div id="location">
+            <h2>Location</h2>            
+            <p>You can find us on the Corner of SW 3rd and Alder, Portland OR
+        <!-- CONTACT SECTION. IT SHOWS ONLY IN DESKTOP SIZE. -->
+		<span class="contact">
+		    <br>Open 7 days a week, 11:00 AM to 7:00 PM
+		    <br><br>Call or text us: &nbsp;<span class="phone">(503)-555-5555</span>
+		    <br><br>Also you can follow us in:
+		    <br><br>
+			    <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"/></a>
+			    <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter icon"/></a>
+			    <a href="http://www.pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"/></a>
+			    <a href="http://www.yelp.com" target="_blank"><img src="images/yelp.png" alt="Yelp icon"/></a>
+		</span>
+	    </p>
+            <!-- GOOGLE MAP IFRAME. -->
+	        <iframe src="https://www.google.com/maps/embed/v1/place?q=SW%203rd%20and%20Alder%2C%20Portland%2C%20OR%2C%20United%20States&key=AIzaSyDoqzYNf8j3K5CQfzjhb2F-emmGxv7JXt4"></iframe>
+            <div class="clear"></div>
+            <!--BACK TO THE TOP LINK. IT CAN BE USED INSTEAD OF SCROLLING TO THE TOP. -->
+            <p class="top"><a href="#top">Back  to Top</a></p>  
+        </div>
+        <!-- CONTACT SECTION. IT HAS 2-COLUMNS. IT SHOWS IN SMARTPHONES AND IPADS. -->
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <p>Open 7 days a week, 11:00 AM to 7:00 PM</p>
+            <p>Call or text us: &nbsp;<span class="phone">(503)-555-5555</span></p>            
+            <p>Also you can follow us in:</p>
+			<div class="socials">
+				<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"/></a>
+				<a href="http://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter icon"/></a>
+				<a href="http://www.pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"/></a>
+				<a href="http://www.yelp.com" target="_blank"><img src="images/yelp.png" alt="Yelp icon"/></a>
+			</div>
+            <!--BACK TO THE TOP LINK. IT CAN BE USED INSTEAD OF SCROLLING TO THE TOP. -->
+            <p class="top"><a href="#top">Back  to Top</a></p>  
+        </div>
+	</div>
+    
+    <!-- JQUERY SCRIPTS. HAMBURGER MENU. -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>    
+    <script src="scripts/jv-jquery-mobile-menu-min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+    <!-- JAVASCRIPT. SLIDY SLIDESHOW. -->
+    <script>
+	var timeOnSlide = 3,
+	timeBetweenSlides = 1,
+	animationstring = 'animation',
+	animation = false,
+	keyframeprefix = '',
+	domPrefixes = 'Webkit Moz O Khtml'.split(' '),
+	pfx = '',
+	slidy = document.getElementById("slidy");
+	if (slidy.style.animationName !== undefined) { animation = true; }
+	if ( animation === false ) {
+	for ( var i = 0; i < domPrefixes.length; i++ ) {
+	if ( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+	pfx = domPrefixes[ i ];
+	animationstring = pfx + 'Animation';
+	keyframeprefix = '-' + pfx.toLowerCase() + '-';
+	animation = true;
+	break;
+	} } }
+	if ( animation === false ) {
+	// animate using a JavaScript fallback, if you wish
+	} else {
+	var images = slidy.getElementsByTagName("img"),
+	firstImg = images[0],
+	imgWrap = firstImg.cloneNode(false);
+	slidy.appendChild(imgWrap);
+	var imgCount = images.length,
+	totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1),
+	slideRatio = (timeOnSlide / totalTime)*100,
+	moveRatio = (timeBetweenSlides / totalTime)*100,
+	basePercentage = 100/imgCount,
+	position = 0,
+	css = document.createElement("style");
+	css.type = "text/css";
+	css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%; }";
+	css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }";
+	css.innerHTML += "@"+keyframeprefix+"keyframes slidy {";
+	for (i=0;i<(4-1); i++) {
+	position+= slideRatio;
+	css.innerHTML += position+"% { left: -"+(i * 100)+"%; }";
+	position += moveRatio;
+	css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }";
+	}
+	css.innerHTML += "}";
+	css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }";
+	document.body.appendChild(css);
+	}
+    </script>    
+</body>
+</html>
